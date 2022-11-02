@@ -147,6 +147,10 @@ h1{
     header{
         height: 180px;
     }
+    ul{
+        display: flex;
+        
+    }
 
     .img_header{
         width: 300px;
@@ -234,11 +238,15 @@ h1{
 
     /*  HEADER  */
 
-    header{
+    /*header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height:auto;
+    }*/
+    ul{
+        display: flex;
+        flex-direction: row;
     }
 
     .img_header{
