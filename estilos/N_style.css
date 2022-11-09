@@ -1,0 +1,393 @@
+*{margin: 0;
+    padding: 0;}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+main, section{
+    background-image: url(../imagenes/fondo\ web.jpg);
+    /*background: rgba(244, 245, 247, 0.2);*/
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 0px;
+    
+}
+
+
+/*  HEADER  */
+
+nav{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(13,14,192,1) 11%, rgba(0,0,0,1) 63%);
+}
+.navbar-brand{
+    width: 500px;
+    /*height: 150px;*/
+    margin-left: 25px;
+    padding: 0px;
+    margin: 50px;
+}
+
+.navbar-toggler{
+    background-color:white;
+    color: white;
+}
+
+
+.navbar-toggler-icon{
+    background-color:white;
+    /*color: white;*/
+}
+
+.nav-link{
+    color: beige;
+}
+.bs-nav-link-hover-color{
+    color: blueviolet;
+}
+
+
+/* DESKTOP */
+
+/* FOOTER DESKTOP*/
+
+.footer{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(13,14,192,1) 11%, rgba(0,0,0,1) 63%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+}
+.texto p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 20px;
+}
+.texto span{
+    text-align: left;
+}
+.texto span a{
+    color: white;
+    text-decoration: none;
+}
+.redes{
+    display: flex;
+    align-items: center;
+}
+.imgRedes{
+    width: 40px;
+    border: 10px;
+}
+.imgRedes1{
+    width: 60px;
+    border: 10px;
+}
+
+/* MAIN  INDEX DESKTOP*/
+
+
+.contenedorbienVenidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.mainTexto{
+    font-size: 18px;
+}
+.cajaTexto{
+    width: 500px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* CONTACTO DESKTOP*/
+
+.formContacto{
+    width: 1000px;
+    background: rgba(89, 75, 175, 0.3);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 50px
+}
+legend{
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 500px;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.datosContacto{
+    margin-left: 80px;
+    margin-top: 200px;
+    height: 0%;
+    padding-left: 40px;
+    padding-top: 10px;
+    border-left: 8px solid blue;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+h3 a{
+    font-size: 30px;
+    text-align: left;
+    color: rgb(61, 26, 186);
+    padding-bottom: 20px;
+}
+
+/* SERVICIO DESKTOP*/
+
+.thumbnail{
+    margin: 50px 0px;
+}
+
+.disenoServicio{
+    font-size: 20px;
+    padding-top: 30px;
+    color: rgb(255, 0, 187);
+    margin-bottom: 15px;
+}
+.caption{
+    background-color: rgba(80, 80, 99,.6);
+    /*border: 2px solid;*/
+    width: 355px;
+    padding: 0px 30px 30px 30px;
+}
+.caption p{
+    font-size: 16px;
+    color: white;
+   /* width: 350px;*/
+    margin-top: 0px;
+    text-align: justify;
+}
+
+
+/*  TABLET  */
+
+@media screen and (max-width:992px){
+
+    /* NAVBAR */
+
+    .navbar-brand{
+        width: 400px;
+        /*height: 150px;*/
+        margin-left: 15px;
+        padding: 0px;
+        margin: 20px;
+    }
+    
+
+     /* MAIN  INDEX */
+
+    .cajaTexto{
+        width: 500px;
+        text-align: justify;
+        margin-top: 12px;
+    }
+     .mainTexto{
+        font-size: 18px;
+    }
+    .bienVenidos{
+        font-size: 35px;
+    }
+    .contenedorbienVenidos{
+        margin-top: 5px;
+    }
+
+    /* CONTACTO -- TABLET*/
+
+    input, textarea{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    textarea{
+        min-height: 50px;
+        max-height: 250px;
+    }
+    
+    .formContacto{
+    margin-left: 65px;
+    margin-bottom: 5px;
+    }
+    .datosContacto{
+   display: none;
+    }
+
+    /* SERVICIO TABLET*/
+
+.thumbnail{
+    margin: 20px 0px;
+}
+.thumbnail img{
+    width: 100%;
+}
+
+.disenoServicio{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.caption{
+    background-color: rgba(80, 80, 99,.6);
+    /*border: 2px solid;*/
+    width: 215px;
+    padding: 0px 30px 30px 30px;
+}
+.caption p{
+    font-size: 12px;
+    color: white;
+   /* width: 350px;*/
+    margin-top: 0px;
+    text-align: justify;
+}
+
+
+    /* FOOTER -- TABLET */
+
+    .footer{
+        height: 60px;
+    }
+    .texto p{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .imgRedes{
+        width: 30px;
+        border: 10px;
+    }
+    .imgRedes1{
+        width: 40px;
+        border: 10px;
+    }
+
+  
+}
+
+/* MOBILE */
+
+@media screen and (max-width:667px){
+
+  /* NAVBAR -- MOBILE */  
+
+    .navbar-brand{
+        width: 200px;
+        margin-left: 10px;
+        padding: 0px;
+        margin: 10px;
+    }
+    .nav-link{
+        font-size: 10px;
+    }
+
+    /* MAIN  INDEX -- MOBILE */
+
+    .cajaTexto{
+        width: 300px;
+        text-align: justify;
+        margin-top: 2px;
+    }
+    .mainTexto{
+        font-size: 9px;
+    }
+    .bienVenidos{
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .contenedorbienVenidos{
+        margin-top: 5px;
+    }
+   
+     /* CONTACTO -- MOBILE */
+
+     .formContacto{
+        width: 340px;
+        padding-bottom: 25px;
+        margin-left: 18px;
+    }
+    legend{
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    input, textarea{
+        margin-bottom: 10px;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: 8px;
+    }
+    textarea{
+        min-height: 50px;
+        max-height: 150px;
+    }
+    .datosContacto{
+        display: none;
+    }
+
+        /* SERVICIO MOBAI*/
+
+    .thumbnail{
+    margin: 20px 0px;
+    }
+    .thumbnail img{
+    width: 62%;
+    }
+    .marco{
+        margin-left: 60px;
+    }
+
+    /* FOOTER  */
+
+
+    .footer{
+        height: 40px;
+    }
+    .texto p{
+        font-size: 9px;
+        padding-top: 10px;
+    }
+    .imgRedes{
+        width: 20px;
+        border: 5px;
+    }
+    .imgRedes1{
+        width: 25px;
+        border: 5px;
+    }
+}
+
