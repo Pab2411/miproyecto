@@ -6,14 +6,13 @@ body{
 }
 
 main, section{
-    background-image: url(../imagenes/fondo\ web.jpg);
+    background-image:linear-gradient(rgba(187, 194, 211, 0.75), rgba(187, 194, 212, 0.75)), url(../imagenes/fondo\ web.jpg);
     /*background: rgba(244, 245, 247, 0.2);*/
     background-repeat: no-repeat; 
     background-position: center center;
     background-size: cover;
     height: 100%;
     margin-bottom: 0px;
-    
 }
 
 
@@ -28,7 +27,7 @@ nav{
     /*height: 150px;*/
     margin-left: 25px;
     padding: 0px;
-    margin: 50px;
+    margin: 30px;
 }
 
 .navbar-toggler{
@@ -60,11 +59,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 150px;
+    height: 130px;
 }
 .texto p{
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -86,7 +85,7 @@ nav{
     border: 10px;
 }
 .imgRedes1{
-    width: 60px;
+    width: 50px;
     border: 10px;
 }
 
@@ -111,25 +110,25 @@ nav{
 /* CONTACTO DESKTOP*/
 
 .formContacto{
-    width: 1000px;
+    width: 600px;
     background: rgba(89, 75, 175, 0.3);
     padding: 20px 30px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 25px;
     margin: 50px
 }
 legend{
-    margin-bottom: 40px;
-    font-size: 40px;
+    margin-bottom: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 input, textarea{
     width: 100%;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 16px;
+    padding: 8px;
     border: none;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 15px;
 }
 textarea{
     min-height: 100px;
@@ -150,19 +149,19 @@ section{
 }
 
 h2{
-    font-size: 50px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 17px;
     font-weight: bold;
     padding-bottom: 20px;
 }
 
 h3 a{
-    font-size: 30px;
+    font-size: 18px;
     text-align: left;
     color: rgb(61, 26, 186);
     padding-bottom: 20px;
@@ -174,24 +173,57 @@ h3 a{
     margin: 50px 0px;
 }
 
+.marco1{
+    padding-right: 50px;
+}
+.marco2{
+    padding: 0px 50px;
+}
+.marco3{
+    padding-left: 50px;
+}
 .disenoServicio{
     font-size: 20px;
     padding-top: 30px;
     color: rgb(255, 0, 187);
     margin-bottom: 15px;
 }
-.caption{
+.textoServicios{
     background-color: rgba(80, 80, 99,.6);
     /*border: 2px solid;*/
     width: 355px;
     padding: 0px 30px 30px 30px;
 }
-.caption p{
+.textoServicios p{
     font-size: 16px;
     color: white;
    /* width: 350px;*/
     margin-top: 0px;
     text-align: justify;
+}
+
+/* PRODUCTOS DESKTOP*/
+
+.cajaTitulo h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 15px;
+    width: 80%;
+    background: rgba(19,92,160,1);
+background: -moz-linear-gradient(-45deg, rgba(19,92,160,1) 0%, rgba(17,81,148,0.41) 54%, rgba(16,72,137,0.41) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(19,92,160,1)), color-stop(54%, rgba(17,81,148,0.41)), color-stop(100%, rgba(16,72,137,0.41)));
+background: -webkit-linear-gradient(-45deg, rgba(19,92,160,1) 0%, rgba(17,81,148,0.41) 54%, rgba(16,72,137,0.41) 100%);
+background: -o-linear-gradient(-45deg, rgba(19,92,160,1) 0%, rgba(17,81,148,0.41) 54%, rgba(16,72,137,0.41) 100%);
+background: -ms-linear-gradient(-45deg, rgba(19,92,160,1) 0%, rgba(17,81,148,0.41) 54%, rgba(16,72,137,0.41) 100%);
+background: linear-gradient(135deg, rgba(19,92,160,1) 0%, rgba(17,81,148,0.41) 54%, rgba(16,72,137,0.41) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#104889', GradientType=1 );
+}
+
+.contenedorNosotros{
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -232,11 +264,16 @@ h3 a{
     input, textarea{
         width: 100%;
         margin-bottom: 15px;
-        padding: 10px;
+        padding: 5px;
         box-sizing: border-box;
         border: none;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 10px;
+    }
+    legend{
+        margin-bottom: 20px;
+        font-size: 17px;
+        font-weight: bold;
     }
     textarea{
         min-height: 50px;
@@ -244,39 +281,50 @@ h3 a{
     }
     
     .formContacto{
+    width: 400px;
     margin-left: 65px;
-    margin-bottom: 5px;
+    margin-bottom: 45px;
+    margin-left: 40;
     }
     .datosContacto{
-   display: none;
+        margin-left: 7px;
+        margin-top: 100px;
     }
+    h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    /* SERVICIO -- TABLET */
 
-    /* SERVICIO TABLET*/
+    .marco1{
+        padding-right: 0px;
+        }
+        .marco2{
+        padding: 0px 0px;
+        }
+        .marco3{
+        padding-left: 0px;
+        }
+        img{
+            width: 90%;
+        }
+        .textoServicios{
+            width: 90%;
+        }
+        .textoServicios p{
+            font-size: 10px;
+        }
+        .disenoServicio{
+            font-size: 15px;
+        }
 
-.thumbnail{
-    margin: 20px 0px;
-}
-.thumbnail img{
-    width: 100%;
-}
+        /* NOSOTROS -- TABLET */
 
-.disenoServicio{
-    font-size: 15px;
-    padding-top: 20px;
-}
-.caption{
-    background-color: rgba(80, 80, 99,.6);
-    /*border: 2px solid;*/
-    width: 215px;
-    padding: 0px 30px 30px 30px;
-}
-.caption p{
-    font-size: 12px;
-    color: white;
-   /* width: 350px;*/
-    margin-top: 0px;
-    text-align: justify;
-}
+        .contenedorNosotros{
+            
+            margin-left: 75px;
+        }
 
 
     /* FOOTER -- TABLET */
@@ -315,6 +363,9 @@ h3 a{
     .nav-link{
         font-size: 10px;
     }
+    .nosotros{
+        display: none;
+    }
 
     /* MAIN  INDEX -- MOBILE */
 
@@ -340,6 +391,7 @@ h3 a{
         width: 340px;
         padding-bottom: 25px;
         margin-left: 18px;
+        margin: 30px;
     }
     legend{
         margin-bottom: 7px;
@@ -359,16 +411,29 @@ h3 a{
         display: none;
     }
 
-        /* SERVICIO MOBAI*/
+    /* SERVICIO MOBILE */
 
-    .thumbnail{
-    margin: 20px 0px;
+    .marco1{
+    padding-right: 0px;
     }
-    .thumbnail img{
-    width: 62%;
+    .marco2{
+    padding: 0px 0px;
     }
-    .marco{
-        margin-left: 60px;
+    .marco3{
+    padding-left: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .textoServicios{
+        width: 100%;
+    }
+
+     /* NOSOTROS -- TABLET */
+
+     .contenedorNosotros{
+            
+        margin-left: 0px;
     }
 
     /* FOOTER  */
@@ -391,3 +456,61 @@ h3 a{
     }
 }
 
+
+/*----EFECTO----*/
+
+.card {
+    width: 165px;
+    height: 260px;
+    margin-left: 20px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .efecto{
+    width: 100%;
+    z-index: 1;
+    color: white;
+    font-size: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .efecto img{
+    width: 60%;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
