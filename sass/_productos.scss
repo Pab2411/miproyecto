@@ -20,6 +20,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#104889', GradientType=1 );
     
     &:hover {background-color: red };color: white;
+.fa-magnifying-glass-plus{
+    font-size: 30px;
+    margin-left: 5px;
+    &:hover {color: blue};
+}
 }
 .modal-body{
     font-size: 15px;
