@@ -7,16 +7,17 @@
     
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="../estilos/N_style.css" />
-    <title>Gestion Grafica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../assets/css/estilos.css" />
+    <title>Gestion Grafica - Nosotros</title>
 </head>
 
 <body>
     <header >
         <nav class="navbar navbar-expand-lg bg-whait">
             <div class="container-fluid">
-              <img class="navbar-brand" src="../imagenes/logo_nav_gestion_grafica.png" alt="logo_gestion_grafica">
+              <img class="navbar-brand" src="../assets/imagenes/logo_nav_gestion_grafica.png" alt="logo_gestion_grafica">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,36 +47,106 @@
     <!--Nosotros-->
 
     <main class="main">
-    <div class="contenedorNosotros">
-        <div class="img_nosotros">
-            <img src="../imagenes/nosotros_info.png" width="100%" alt="Nosotros">
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-xl-6 carrusel " id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/imagenes/hombre_pc.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/imagenes/hombre_lampara.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/imagenes/hombre_estrecha_mano.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
         </div>
+  
+     <div class="accordion col-sm-12 col-md-12 col-xl-6 " id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed fondoAcordion mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+              </svg>LA EMPRESA
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body acordionColor">
+              <strong>Gestión Gráfica,</strong> Se caracteriza por identificar la necesidad del cliente y direccionarla hacia el lugar apropiado, 
+              para satisfacer con calidad, y compromiso la demanda del mismo.<br><br>
+              Trabajamos en pos de crear vínculo, no solo comercial, sino tanbién humano, que permita
+              una relación fluida de trabajo
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fondoAcordion mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+              </svg> CÓMO SURGIÓ LA IDEA?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body acordionColor">
+              <strong>Gestión Gráfica,</strong> Surge de un camino largo, que comenzó hace 23 años y tomo forma, con la experiencia 
+            y la confianza de nuestros clientes y proveedores. Estos cambios en la estructura nos dejaron un gran aprendizaje, 
+            siempre para mejorar y brindar atención que el cliente merece. </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fondoAcordion mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>CUÁL ES NUESTRO VALOR AGREGADO?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body acordionColor">
+              Como <strong>Gestión Gráfica,</strong> apuntamos a la confiabilidad en relación empresa cliente, y nuestros principales valores
+              estan puestos en la exelencia del trato y la conformidad del cliente.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  
+    <!--<div class="contenedor_nosotros">
+        <div class="img_nosotros">
+            <img src="../imagenes/nosotros_info.png" alt="Nosotros">
+        </div>
+    </div>-->
     </main>
 
 
     <footer class="footer"> 
-        <div class="texto">
-            <p>
-                2022 - Todos los derechos reservados a Gestion Gráfica. 
-                <span>
-                    <a href="pablo@gestion-grafica.com.ar">pablo@gestion-grafica.com.ar</a>
-                </span>
-            </p>
-        </div>
+      <div class="texto">
+          <p>
+              2022 - Todos los derechos reservados a Gestion Gráfica. 
+              <span>
+                  <a href="pablo@gestion-grafica.com.ar">pablo@gestion-grafica.com.ar</a>
+              </span>
+          </p>
+      </div>
+      
+          <div class="redes">
+              <a href="#" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+              </a>
+          </div>
+    </footer>
 
-            <div class="redes">
-                <a href="#" target="_blank">
-                    <img class="imgRedes" src="../imagenes/facebook.svg" alt="Logo de Facebook">
-                </a>
-                <a href="#" target="_blank">
-                     <img class="imgRedes1" src="../imagenes/instagram.svg" alt="Logo de Instagram">
-                </a>
-            </div>
-      </footer>
-
-     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+   <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

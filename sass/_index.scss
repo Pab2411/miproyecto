@@ -1,0 +1,130 @@
+@use'variables';
+@use'globales';
+
+*{margin: 0;
+    padding: 0;}
+
+body{
+    font-family: variables.$tipog-general;
+}
+
+/* MAIN  INDEX DESKTOP*/
+
+.contenedorbienVenidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.cajaTexto{
+    width: 500px;
+    text-align: justify;
+    margin-top: 20px;
+    .mainTexto{
+        font-size: 18px;
+    }
+}
+
+// TABLET
+
+@media screen and (max-width:992px){
+
+     /* NAVBAR TABLET */
+
+     .navbar-brand{
+        width: 400px;
+        margin-left: 15px;
+        padding: 0px;
+        margin: 20px;
+    }
+
+     /* MAIN  INDEX */
+
+    .contenedorbienVenidos{
+        margin-top: 5px;
+        .bienVenidos{
+            font-size: 35px;
+        } 
+    }
+    .cajaTexto{
+        width: 500px;
+        text-align: justify;
+        margin-top: 12px;
+        .mainTexto{
+            font-size: 18px;
+        }
+    }  
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    /* FOOTER -- TABLET */
+
+    .footer{
+        height: 60px;
+        .texto p{
+            font-size: 12px;
+            padding-top: 15px;
+        }
+        .imgRedes{
+            width: 30px;
+            border: 10px;
+        }
+        .imgRedes1{
+            width: 40px;
+            border: 10px;
+        }
+    }
+
+}
+
+//  MOBILE 
+
+@media screen and (max-width:667px){
+
+
+    /* NAVBAR -- MOBILE */  
+
+    .navbar-brand{
+        width: 200px;
+        margin-left: 10px;
+        padding: 0px;
+        margin: 10px;
+    }
+    .nav-link{
+        font-size: 10px;
+    }
+
+    /* MAIN  INDEX -- MOBILE */
+
+    .contenedorbienVenidos{
+        margin-top: 5px;
+        .bienVenidos{
+            font: {
+                size: 19px;
+                weight: bold;
+            } 
+                
+        }
+    }
+    .cajaTexto{
+        width: 300px;
+        text-align: justify;
+        margin-top: 2px;
+        .mainTexto{
+            font-size: 9px;
+        }
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /* FOOTER  */
+
+
+
+}
+
+

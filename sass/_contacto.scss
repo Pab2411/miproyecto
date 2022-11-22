@@ -1,0 +1,129 @@
+@use'globales';
+
+/* CONTACTO DESKTOP*/
+
+.formContacto{
+    width: 600px;
+    background: rgba(89, 75, 175, 0.3);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 50px
+}
+legend{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    textarea{
+        min-height: 100px;
+        max-height: 500px;
+    }
+}
+section{
+    display: flex;
+    justify-content: center;
+    .datosContacto{
+        margin-left: 80px;
+        margin-top: 200px;
+        height: 0%;
+        padding-left: 40px;
+        padding-top: 10px;
+        border-left: 8px solid blue;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    h3{
+        font-size: 17px;
+        font-weight: bold;
+        padding-bottom: 20px;  
+        a{
+            font-size: 15px;
+            text-align: left;
+            color: rgb(61, 26, 186);
+            padding-bottom: 20px;
+        }          
+    }
+}
+
+/*  TABLET  */
+
+@media screen and (max-width:992px){
+
+    input, textarea{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 5px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        font-size: 10px;
+        textarea{
+            min-height: 50px;
+            max-height: 250px;
+        }
+    }
+    legend{
+        margin-bottom: 20px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .formContacto{
+        width: 350px;
+        margin-left: 24px;
+        margin-bottom: 45px;
+        }
+    section .datosContacto{
+        margin-left: 7px;
+        margin-top: 150px;
+    h2{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+        h3{
+            font-size: 15px;
+            a{
+                font-size: 13px;
+            } 
+    }
+}
+}
+/* MOBILE */
+
+@media screen and (max-width:667px){
+
+
+    .formContacto{
+        width: 340px;
+        padding-bottom: 25px;
+        margin-left: 18px;
+        margin: 30px;
+    }
+    legend{
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    input, textarea{
+        margin-bottom: 10px;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: 8px;
+        textarea{
+            min-height: 50px;
+            max-height: 150px;
+        }
+    }
+    .datosContacto{
+        display: none;
+    }
+}

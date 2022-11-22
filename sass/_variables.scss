@@ -1,0 +1,16 @@
+// TIPOGRAFIA GENERAL
+
+$tipog-general:'Roboto Mono', monospace;
+
+//COLOR 
+
+$color-h2: rgb(235, 215, 229);
+
+%iconitos{
+    font-size: 30Px;
+    margin: 7px;
+
+    &:hover {
+        color:  rgb(177, 241, 16);
+    }
+}

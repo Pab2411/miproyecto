@@ -1,0 +1,91 @@
+@use'variables';
+
+// MAIN
+
+body, section{
+    background-image:linear-gradient(rgba(187, 194, 211, 0.75), rgba(187, 194, 212, 0.75)), url(../imagenes/fondo\ web.jpg);
+    /*background: rgba(244, 245, 247, 0.2);*/
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+
+// HEADER   
+
+nav{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(13,14,192,1) 11%, rgba(0,0,0,1) 63%);
+}
+.navbar-brand{
+    width: 500px;
+    margin-left: 25px;
+    padding: 0px;
+    margin: 30px;
+}
+.navbar-toggler{
+    background-color:white;
+    color: white;
+    .navbar-toggler-icon{
+        background-color:white;
+    }
+}
+.nav-link{
+    color: beige;
+    }
+.nav-link:hover{
+    color: rgb(226, 43, 43);
+    }
+
+// FOOTER
+
+.footer{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(13,14,192,1) 11%, rgba(0,0,0,1) 63%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+}
+.texto p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 20px;
+    .span{
+        text-align: left;
+    }
+}
+.texto span a{
+    color: white;
+    text-decoration: none;
+}
+.redes{
+    display: flex;
+    align-items: center;
+}
+.fa-facebook{
+    @extend %iconitos;
+}
+.fa-instagram{
+    @extend %iconitos;
+}
+.fa-whatsapp{
+    @extend %iconitos;
+}
+
+$redes:(
+    facebook: blue,
+    instagram: white,
+    whatsapp: green
+);
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial}{
+        color: $colordered ;
+    }
+    
+}

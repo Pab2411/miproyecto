@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="../estilos/N_style.css" />
-    <title>Gestion Grafica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../assets/css/estilos.css" />
+    <title>Gestion Grafica - Productos</title>
 </head>
 <body>
     <header >
         <nav class="navbar navbar-expand-lg bg-whait">
             <div class="container-fluid">
-              <img class="navbar-brand" src="../imagenes/logo_nav_gestion_grafica.png" alt="logo_gestion_grafica">
+              <img class="navbar-brand" src="../assets/imagenes/logo_nav_gestion_grafica.png" alt="logo_gestion_grafica">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -47,144 +48,141 @@
     <main>   
 
 <!----FOLLETERIA---->
-        <artcle class="container-fluid">
-            <div class="row">
+        <article class="container-fluid">
+           
                 <div class="cajaTitulo">
-                    <h2>Folletería</h2>
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#diptico1">
+                        Folletos + Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="diptico1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">Folletos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Formatos A4 y Oficio, doblados. en material obra o ilustración, consultá por otros tamaños. Cantidades mínimas en impresión offset, a convenir. 
+                                En impresión digital por unidad.
+                            </div>                 
+                        </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="row">
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/diptico1.png" class="card-img-top" alt="diptico">
+                            <div class="efecto"><img src="../assets/imagenes/folletos1.jpg" class="card-img-top" alt="diptico">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flayer</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-xl-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="efecto"><img src="../assets/imagenes/folletos.jpg" class="card-img-top" alt="diptico">
                                 <div class="card-body">
                                     <h5 class="card-title">Díptico</h5>
-                                        <a href="#" class="btn btn-primary mb-2">Detalle</a>
+                                        
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/folletos.jpg" class="card-img-top" alt="diptico">
+                            <div class="efecto"><img src="../assets/imagenes/triptico-!.jpg" class="card-img-top" alt="triptico">
                                 <div class="card-body">
-                                    <h5 class="card-title">Díptico</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                    <h5 class="card-title">Tríptico cerrado</h5>
+             
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/triptico-!.jpg" class="card-img-top" alt="triptico">
+                            <div class="efecto"><img src="../assets/imagenes/triptico.jpg" class="card-img-top" alt="triptico">
                                 <div class="card-body">
-                                    <h5 class="card-title">Tríptico</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/triptico.jpg" class="card-img-top" alt="triptico">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tríptico</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+                                    <h5 class="card-title">Tríptico abierto</h5>
 
-<!-------CARPETAS------->
-
-            <!--<div class="row">
-                <div class="cajaTitulo">
-                    <h2>Carpetas</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <div class="col-xs-12 col-md-6 col-xl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/carpetas 1.jpg" class="card-img-top" alt="Carpeta">
-                                <div class="card-body">
-                                    <h5 class="card-title">Carpetas</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="efecto"></div><img src="../imagenes/carpetas.jpg" class="card-img-top" alt="Carpeta">
-                                <div class="card-body">
-                                    <h5 class="card-title">Carpetas</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/Carpeta 3.png" class="card-img-top" alt="Carpeta">
-                                <div class="card-body">
-                                    <h5 class="card-title">Carpetas</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-xl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/Carpeta 2.png" class="card-img-top" alt="Carpeta">
-                                <div class="card-body">
-                                    <h5 class="card-title">Carpetas</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+
+
             
   <!-------CARPETAS-------> 
 
+                 <div class="cajaTitulo">
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carpeta">
+                        Carpetas + Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="carpeta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">Carpetas</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tamaños A4 y Oficio, con y sin solapas, en material ilustración, consultá por acabados y personalización para la necesidad de tu emprendimiento o empresa. Cantidades mínimas en impresión offset,  a convenir. 
+                                En impresión digital por unidad.
+                            </div>                 
+                        </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
-                    <div class="cajaTitulo">
-                        <h2>Carpetas</h2>
-                    </div>
                         <div class="col-xs-12 col-md-6 col-xl-3">
                             <div class="card" style="width: 18rem;">
-                                <div class="efecto"><img src="../imagenes/carpetas.jpg" class="card-img-top" alt="Carpeta">
+                                <div class="efecto"><img src="../assets/imagenes/carpetas.jpg" class="card-img-top" alt="Carpeta">
                                     <div class="card-body">
-                                        <h5 class="card-title">Díptico</h5>
-                                            <a href="#" class="btn btn-primary mb-2">Detalle</a>
+                                        <h5 class="card-title">Carpeta 1 solapa</h5>
+                            
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-xl-3">
                             <div class="card" style="width: 18rem;">
-                                <div class="efecto"><img src="../imagenes/carpetas 1.jpg" class="card-img-top" alt="Carpeta">
+                                <div class="efecto"><img src="../assets/imagenes/Carpeta 2.png" class="card-img-top" alt="Carpeta">
                                     <div class="card-body">
-                                        <h5 class="card-title">Díptico</h5>
-                                            <a href="#" class="btn btn-primary">Detalle</a>
+                                        <h5 class="card-title">Carpeta cerrada</h5>
+                                       
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-xl-3">
                             <div class="card" style="width: 18rem;">
-                                <div class="efecto"><img src="../imagenes/Carpeta 2.png" class="card-img-top" alt="Carpeta">
+                                <div class="efecto"><img src="../assets/imagenes/carpetas 1.jpg" class="card-img-top" alt="Carpeta">
                                     <div class="card-body">
-                                        <h5 class="card-title">Tríptico</h5>
-                                            <a href="#" class="btn btn-primary">Detalle</a>
+                                        <h5 class="card-title">Carpeta solapa larga</h5>
+                                 
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-xl-3">
                             <div class="card" style="width: 18rem;">
-                                <div class="efecto"><img src="../imagenes/Carpeta 3.png" class="card-img-top" alt="Carpeta">
+                                <div class="efecto"><img src="../assets/imagenes/Carpeta 3.png" class="card-img-top" alt="Carpeta">
                                     <div class="card-body">
-                                        <h5 class="card-title">Tríptico</h5>
-                                            <a href="#" class="btn btn-primary">Detalle</a>
+                                        <h5 class="card-title">Carpeta doble solapa</h5>
+                                           
                                     </div>
                                 </div>
                             </div>
@@ -194,26 +192,47 @@
 
     <!-------ETIQUETA-------> 
             
-            <div class="row">
-                <div class="cajaTitulo">
-                    <h2>Etiquetas</h2>
+             <div class="cajaTitulo">
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#etiqueta">
+                        Etiquetas + Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="etiqueta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">Etiquetas</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Utilizado para publicidad, Impreso sobre diversos materiales. Variedad en formatos y tamaños. Material ilustración o pvc autoadhesivo. Cantidades mínimas en impresión offset, a convenir. En impresión digital, mínimo de 1 hoja A4 o A3.
+                            ya que contamos con sistema de plotter de corte.
+                            </div>                 
+                        </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="row">
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/etiquetas 1.jpg" class="card-img-top" alt="Etiqueta">
+                            <div class="efecto"><img src="../assets/imagenes/etiquetas 1.jpg" class="card-img-top" alt="Etiqueta">
                                 <div class="card-body">
-                                    <h5 class="card-title">Banderas</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                    <h5 class="card-title">Etiqueta recta</h5>
+                                       
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/etiquetas.jpg" class="card-img-top" alt="Etiqueta">
+                            <div class="efecto"><img src="../assets/imagenes/etiquetas.jpg" class="card-img-top" alt="Etiqueta">
                                 <div class="card-body">
-                                    <h5 class="card-title">Lona</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                    <h5 class="card-title">Etiqueta con forma</h5>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -223,46 +242,67 @@
 
     <!-------GIGANTOGRAFIA-------> 
             
-            <div class="row">
-                <div class="cajaTitulo">
-                    <h2>Gigantografía</h2>
+             <div class="cajaTitulo">
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gigantografía">
+                        Gigantografía + Info
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="gigantografía" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">Gigantografía</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Impresion en lona front , back light, en tela de bandera y canvas,
+                                Consulta por medida y bastidores.
+                            </div>                 
+                        </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="row">
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/Bandera_banner.png" class="card-img-top" alt="Bandera">
+                            <div class="efecto"><img src="../assets/imagenes/Bandera_banner.png" class="card-img-top" alt="Bandera">
                                 <div class="card-body">
                                     <h5 class="card-title">Banderas</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                        
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/Lona 1.jpg" class="card-img-top" alt="Lona">
+                            <div class="efecto"><img src="../assets/imagenes/Lona 1.jpg" class="card-img-top" alt="Lona">
                                 <div class="card-body">
                                     <h5 class="card-title">Lona</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                        
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/Lona 2.jpg" class="card-img-top w-50%" alt="Lona">
+                            <div class="efecto"><img src="../assets/imagenes/Lona 2.jpg" class="card-img-top w-50%" alt="Lona">
                                 <div class="card-body">
                                     <h5 class="card-title">Lona</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                        
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-xl-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="efecto"><img src="../imagenes/Rol-up 2 caras.png" class="card-img-top" alt="Rol-up">
+                            <div class="efecto"><img src="../assets/imagenes/Rol-up 2 caras.png" class="card-img-top" alt="Rol-up">
                                 <div class="card-body">
                                     <h5 class="card-title">Rol-UP</h5>
-                                        <a href="#" class="btn btn-primary">Detalle</a>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -270,18 +310,11 @@
                     
             </div>
 
-        </artcle>
+        </article>
           
     </main>
 
-
-
-
-
-     <!-- JavaScript Bundle with Popper -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-<footer class="footer"> 
+    <footer class="footer"> 
         <div class="texto">
             <p>
                 2022 - Todos los derechos reservados a Gestion Gráfica. 
@@ -290,19 +323,22 @@
                 </span>
             </p>
         </div>
-
+        
             <div class="redes">
                 <a href="#" target="_blank">
-                    <img class="imgRedes" src="../imagenes/facebook.svg" alt="Logo de Facebook">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
                 <a href="#" target="_blank">
-                     <img class="imgRedes1" src="../imagenes/instagram.svg" alt="Logo de Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
             </div>
       </footer>
 
      <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
