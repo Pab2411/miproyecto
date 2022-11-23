@@ -191,7 +191,7 @@ body {
 }
 /*  NOSOTROS DESKTOP */
 .accordion {
-  margin: 150px 0px;
+  margin: 100px 0px;
   width: 440px;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .carrusel {
-  margin: 100px;
+  margin: 50px;
 }
 
 /*  TABLET  */
@@ -392,7 +392,7 @@ body {
     margin-top: 11px;
   }
   .row {
-    margin-left: 15px;
+    margin-left: 0px;
     margin-right: 0px;
   }
 }
