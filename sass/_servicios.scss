@@ -24,6 +24,7 @@
 
 .textoServicios{
     width: 355px;
+    height: 1100px;
     padding: 0px 30px 30px 30px;
     .disenoServicio{
         font-size: 20px;
@@ -94,6 +95,10 @@
     }
     .textoServicios{
         width: 100%;
+        height: 100%;
+    }
+    .textoServicios p{
+        font-size: 15px;
     }
     
 /* FOOTER */
