@@ -48,7 +48,7 @@ nav {
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(13, 14, 192) 11%, rgb(0, 0, 0) 63%);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 130px;
 }
 
@@ -279,13 +279,13 @@ body {
   }
   .acordionColor {
     background-color: rgb(238, 238, 51);
-    font-size: 10px;
+    font-size: 15px;
   }
   .carrusel {
     margin: 0px;
   }
   .fondoAcordion {
-    font-size: 12px;
+    font-size: 15px;
     color: beige;
   }
   .fondoAcordion svg {
@@ -316,6 +316,10 @@ body {
 .card:hover {
   color: #0b07ff;
   box-shadow: 2px 2px 30px #ee07ff inset;
+}
+
+.html {
+  overflow-x: hidden;
 }
 
 .cajaTitulo .btn {
@@ -397,7 +401,7 @@ body {
     font-size: 17px;
   }
   .cajaTitulo .btn {
-    width: 90%;
+    width: 87%;
   }
   .modal-body {
     font-size: 15px;
@@ -445,7 +449,7 @@ body {
 
 .textoServicios {
   width: 355px;
-  height: 1100px;
+  height: 1900px;
   padding: 0px 30px 30px 30px;
 }
 .textoServicios .disenoServicio {
@@ -492,7 +496,7 @@ body {
     width: 90%;
   }
   .textoServicios p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .disenoServicio {
     font-size: 15px;
@@ -521,15 +525,15 @@ body {
   }
   /* FOOTER */
   .footer {
-    height: 40px;
+    height: 48px;
   }
   .footer .texto p {
-    font-size: 8px;
+    font-size: 9px;
     padding-top: 10px;
   }
   .footer .fa-facebook, .footer .fa-instagram, .footer .fa-whatsapp {
     font-size: 15px;
-    margin: 4px;
+    margin: 2px;
   }
 }
 @-webkit-keyframes slit-in-vertical {

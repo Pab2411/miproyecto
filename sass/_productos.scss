@@ -2,6 +2,9 @@
 @use'variables';
 @use'efectos';
 
+.html{
+    overflow-x: hidden;
+}
 
 .cajaTitulo .btn {
     display: flex;
@@ -81,7 +84,7 @@
 }
 
 .cajaTitulo .btn {
-    width: 90%;
+    width: 87%;
 }
 .modal-body{
     font-size: 15px;
