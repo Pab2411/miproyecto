@@ -449,7 +449,7 @@ body {
 
 .textoServicios {
   width: 355px;
-  height: 1900px;
+  height: 1120px;
   padding: 0px 30px 30px 30px;
 }
 .textoServicios .disenoServicio {
@@ -494,6 +494,7 @@ body {
   }
   .textoServicios {
     width: 90%;
+    height: 1900px;
   }
   .textoServicios p {
     font-size: 14px;
