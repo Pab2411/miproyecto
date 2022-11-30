@@ -67,7 +67,7 @@
     }
     .textoServicios{
         width: 90%;
-        height: 1900px;
+        height: 1925px;
     }
     .textoServicios p{
         font-size: 14px;
@@ -105,15 +105,18 @@
 /* FOOTER */
 
 .footer{
-    height: 48px;
+    height: 80px;
     .texto p{
         font-size: 9px;
-        padding-top: 10px;
+        padding-top: 15px;
     }
     .fa-facebook, .fa-instagram, .fa-whatsapp{
         font-size: 15px;
         margin: 2px;
     }
+    }
+.redes{
+    flex-direction: column;
 }
 }
 

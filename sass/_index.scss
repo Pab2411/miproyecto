@@ -2,7 +2,9 @@
 @use'globales';
 
 *{margin: 0;
-    padding: 0;}
+    padding: 0;
+    overflow-x: hidden; 
+}
 
 body{
     font-family: variables.$tipog-general;
@@ -37,6 +39,9 @@ body{
         padding: 0px;
         margin: 20px;
     }
+    .nav-link{
+        font-size: 20px;
+    }
 
      /* MAIN  INDEX */
 
@@ -62,7 +67,7 @@ body{
     /* FOOTER -- TABLET */
 
     .footer{
-        height: 60px;
+        height: 90px;
         .texto p{
             font-size: 12px;
             padding-top: 15px;
@@ -93,7 +98,7 @@ body{
         margin: 10px;
     }
     .nav-link{
-        font-size: 10px;
+        font-size: 13px;
     }
 
     /* MAIN  INDEX -- MOBILE */
@@ -120,10 +125,6 @@ body{
         margin-left: 0px;
         margin-right: 0px;
     }
-
-    /* FOOTER  */
-
-
 
 }
 

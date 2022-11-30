@@ -89,6 +89,7 @@ nav {
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -120,6 +121,9 @@ body {
     padding: 0px;
     margin: 20px;
   }
+  .nav-link {
+    font-size: 20px;
+  }
   /* MAIN  INDEX */
   .contenedorbienVenidos {
     margin-top: 5px;
@@ -141,7 +145,7 @@ body {
   }
   /* FOOTER -- TABLET */
   .footer {
-    height: 60px;
+    height: 90px;
   }
   .footer .texto p {
     font-size: 12px;
@@ -165,7 +169,7 @@ body {
     margin: 10px;
   }
   .nav-link {
-    font-size: 10px;
+    font-size: 13px;
   }
   /* MAIN  INDEX -- MOBILE */
   .contenedorbienVenidos {
@@ -187,7 +191,6 @@ body {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* FOOTER  */
 }
 /*  NOSOTROS DESKTOP */
 .accordion {
@@ -255,10 +258,10 @@ body {
   }
   /* FOOTER -- TABLET */
   .footer {
-    height: 60px;
+    height: 90px;
   }
   .footer .texto p {
-    font-size: 12px;
+    font-size: 17px;
     padding-top: 15px;
   }
   .imgRedes {
@@ -318,7 +321,7 @@ body {
   box-shadow: 2px 2px 30px #ee07ff inset;
 }
 
-.html {
+html {
   overflow-x: hidden;
 }
 
@@ -494,7 +497,7 @@ body {
   }
   .textoServicios {
     width: 90%;
-    height: 1900px;
+    height: 1925px;
   }
   .textoServicios p {
     font-size: 14px;
@@ -526,15 +529,18 @@ body {
   }
   /* FOOTER */
   .footer {
-    height: 48px;
+    height: 80px;
   }
   .footer .texto p {
     font-size: 9px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
   .footer .fa-facebook, .footer .fa-instagram, .footer .fa-whatsapp {
     font-size: 15px;
     margin: 2px;
+  }
+  .redes {
+    flex-direction: column;
   }
 }
 @-webkit-keyframes slit-in-vertical {
